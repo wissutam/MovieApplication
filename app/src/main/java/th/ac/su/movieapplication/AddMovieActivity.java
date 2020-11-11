@@ -18,7 +18,6 @@ public class AddMovieActivity extends AppCompatActivity {
     public static final int REQUEST_GALLERY = 1;
 
     Bitmap bitmap;
-
     ImageView imageView1;
 
     public void onCreate(Bundle savedInstanceState) {

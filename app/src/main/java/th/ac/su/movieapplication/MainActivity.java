@@ -25,11 +25,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button learnButton = findViewById(R.id.admin_button);
-        learnButton.setOnClickListener(new View.OnClickListener() {
+        Button AdminButton = findViewById(R.id.admin_button);
+        AdminButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddMovieActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button UserButton = findViewById(R.id.user_button);
+        UserButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListMovieActivity.class);
                 startActivity(intent);
             }
         });
